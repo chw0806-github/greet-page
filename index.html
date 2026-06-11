@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>温馨问候</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #e8f4f8, #d6eaf8);
+            font-family: "Microsoft YaHei", sans-serif;
+            padding: 20px;
+        }
+
+        .card {
+            background: #ffffff;
+            max-width: 520px;
+            width: 100%;
+            padding: 50px 35px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            animation: fadeUp 1s ease forwards;
+            position: relative;
+            overflow: hidden;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            font-size: 32px;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+
+        .text {
+            font-size: 19px;
+            color: #555;
+            line-height: 2;
+            margin: 12px 0;
+        }
+
+        .tip {
+            margin-top: 30px;
+            font-size: 20px;
+            color: #3498db;
+            font-weight: 500;
+        }
+
+        /* 装饰圆点 */
+        .dot {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(52, 152, 219, 0.15);
+        }
+        .dot1 {
+            width: 120px;
+            height: 120px;
+            top: -60px;
+            right: -60px;
+        }
+        .dot2 {
+            width: 100px;
+            height: 100px;
+            bottom: -50px;
+            left: -50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="dot dot1"></div>
+        <div class="dot dot2"></div>
+        <h2>哈喽畅姐😊</h2>
+        <p class="text">请问你现在在忙什么呢？</p>
+        <p class="text">忙碌之余别忘了好好午休哦</p>
+        <p class="tip">祝你午后轻松，元气满满~</p>
+    </div>
+</body>
+</html>
